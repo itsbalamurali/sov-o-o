@@ -1,0 +1,8 @@
+
+
+
+User
+
+-> Tenants
+-> TenantDomains
+-> TenantPlans

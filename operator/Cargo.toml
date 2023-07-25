@@ -1,0 +1,27 @@
+[package]
+name = "sovrin-cloud-operator"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+[dependencies]
+anyhow = "1.0"
+clap = "4.3"
+failure = "0.1"
+fnv = "1.0"
+futures = { version = "0.3" }
+semver = "1.0"
+serde = "1.0"
+snafu = "0.7"
+strum = { version = "0.25", features = ["derive"] }
+tokio = { version = "1.28", features = ["full"] }
+tokio-zookeeper = "0.2"
+tracing = "0.1"
+pin-project = "1.1"
+stackable-operator = { git = "https://github.com/stackabletech/operator-rs.git", tag = "0.44.0" }
+sovrin-cloud-crd = { path = "../crd" }
+
+[build-dependencies]
+built = { version = "0.6", features = ["chrono", "git2"] }
+stackable-operator = { git = "https://github.com/stackabletech/operator-rs.git", tag = "0.44.0" }
+sovrin-cloud-crd = { path = "../crd" }
